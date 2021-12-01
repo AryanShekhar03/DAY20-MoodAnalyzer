@@ -1,6 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Mood_Analyzer_Program;
+namespace Mood_Analyzer_Test
 
-namespace Mood_Analyzer_Program
 {
     [TestClass]
     public class UnitTest1
@@ -11,9 +12,9 @@ namespace Mood_Analyzer_Program
             string msg = "I am in sad mood";
             string expected = "SAD";
 
-            MoodAnalyzer mood = new MoodAnalyzer();
+            MoodAnalyzer mood = new MoodAnalyzer(msg);
 
-            string actual = mood.AnalyseMood(msg);
+            string actual = mood.AnalyseMood();
 
             Assert.AreEqual(expected, actual);
         }
@@ -23,9 +24,9 @@ namespace Mood_Analyzer_Program
             string msg = "I am in Any mood";
             string expected = "HAPPY";
 
-            MoodAnalyzer mood = new MoodAnalyzer();
+            MoodAnalyzer mood = new MoodAnalyzer(msg);
 
-            string actual = mood.AnalyseMood(msg);
+            string actual = mood.AnalyseMood();
 
             Assert.AreEqual(expected, actual);
         }
