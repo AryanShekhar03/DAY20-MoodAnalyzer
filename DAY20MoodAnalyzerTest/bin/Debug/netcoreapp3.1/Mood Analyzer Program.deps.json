@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Mood Analyzer Program/1.0.0": {
+        "runtime": {
+          "Mood Analyzer Program.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Mood Analyzer Program/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
